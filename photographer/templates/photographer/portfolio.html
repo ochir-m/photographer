@@ -1,0 +1,117 @@
+{% extends 'photographer/base.html' %}
+{% load static %}
+{% load photographer_tags %}
+
+{% block title %}{{title}}{% endblock %}
+
+{% block content%}
+<!-- portfolio -->
+<div class="container-fluid">
+    <div class="row">
+        {% if cat_selected < 0 %}
+        <div class="container">
+            <div class="row">
+                <div class="col-12" style="padding: 1em 0">
+                    <nav style="text-align:center">
+                        <ul>
+                            {% for m in cats %}
+                            <li class="categories-nav-item">
+                                <a class="categories-nav-link" href="{{ m.get_absolute_url }}" >{{m.name}}</a>
+                            </li>
+                            {% endfor %}
+                        </ul>
+                    </nav>
+                    <hr class="category-line">
+                </div>
+            </div>
+        </div>
+        {% endif %}
+
+        <div class="container">
+            <div class="row">
+                {% for l in subcats %}
+                    {% if l.pk == cat_selected %}
+                        <div class="col-12" style="padding: 1em 0">
+                            <nav style="text-align:center">
+                                <ul>
+                                    {% for j in cats %}
+                                    <li class="categories-nav-item">
+                                        <a class="categories-nav-link" href="{{ j.get_absolute_url }}">{{j.name}}</a>
+                                    </li>
+                                    {% endfor %}
+                                </ul>
+                            </nav>
+                            <hr class="category-line">
+                        </div>
+                    {% endif %}
+                {% endfor %}
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                {% for i in subcats %}
+                    {% if i.pk == cat_selected %}
+                        <div class="col-12">
+                            <nav style="text-align:center">
+                                <ul>
+                                    {% for j in subcats %}
+                                    <li class="categories-nav-item">
+                                        <a class="categories-nav-link" href="{{ j.get_absolute_url }}">{{j.name}}</a>
+                                    </li>
+                                    {% endfor %}
+                                </ul>
+                            </nav>
+                        </div>
+                    {% endif %}
+                {% endfor %}
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                {% for i in subcats %}
+                    {% if i.pk == subcat_selected %}
+                        {% if l.pk == cat_selected %}
+                        <div class="col-12" style="padding: 1em 0">
+                            <nav style="text-align:center">
+                                <ul>
+                                    {% for j in cats %}
+                                    <li class="categories-nav-item">
+                                        <a class="categories-nav-link" href="{{ j.get_absolute_url }}">{{j.name}}</a>
+                                    </li>
+                                    {% endfor %}
+                                </ul>
+                            </nav>
+                        <hr class="category-line">
+                        </div>
+                        {% endif %}
+                        <div class="col-12">
+                            <nav style="text-align:center">
+                                <ul>
+                                    {% for k in subcats %}
+                                    <li class="categories-nav-item">
+                                        <a class="categories-nav-link" href="{{ k.get_absolute_url }}">{{k.name}}</a>
+                                    </li>
+                                    {% endfor %}
+                                </ul>
+                            </nav>
+                        </div>
+                    {% endif %}
+                {% endfor %}
+            </div>
+        </div>
+        <br>
+        <div class="container-fluid" id="portfolio-photos">
+            <div class="grid">
+                {% for l in posts %}
+                <a data-fancybox="gallery" href="{{ l.photo.url }}">
+                    <img class="img-fluid" src="{{ l.photo.url }}" alt="">
+                </a>
+                {% endfor %}
+            </div>
+        </div>
+        <br>
+    </div>
+</div>
+{% endblock %}

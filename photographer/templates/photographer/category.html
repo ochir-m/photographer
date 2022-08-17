@@ -1,0 +1,3 @@
+{% for m in cats %}
+    <li><a href="{{ m.get_absolute_url }}">{{m.name}}</a></li>
+{% endfor %}

@@ -1,0 +1,94 @@
+{% extends 'photographer/base.html' %}
+{% load static %}
+{% load photographer_tags %}
+
+{% block title%}{{title}}{% endblock %}
+
+{% block content %}
+<!-- my contacts -->
+<div class="container-fluid" id="my-contacts">
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+            <img class="d-block w-100" src="{% static 'photographer/images/my_contacts/my_contacts2.jpg' %}"
+                 alt="Фото" style="padding:2em; border:0px; border-radius:50px"></p>
+        </div>
+        <div class="col-xs-0 col-sm-0 col-md-0 col-lg-6 col-xl-6">
+            <h2>Фотограф Очир Манджиев</h2>
+            <p>Фотографирую с 2015 года. Проживаю в Москве.
+                Но часто бываю и в других городах и странах. Являюсь разноплановым фотографом.
+                Нравится как студийная съемка, так и выезды на мероприятия или же на экскурсии или красивые локации.
+                Сделаю вам красивые фотографии, которые будут радовать вас при каждом просмотре. По всем вопросам пишите.
+                Отвечу в кратчайшие сроки. </p>
+            <h3 align="center">Мои контакты:</h3>
+            <ul>
+                {% show_social_networks %}
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!-- price -->
+<div class="container-fluid" id="price" style="background-color:#f0f0f0">
+    <h2 align="center">Прайс-лист</h2>
+    <div class="container-fluid">
+    {% for k in price_categories %}
+        <div class="row" id="price-info">
+            <div class="col-xs-0 col-sm-0 col-md-0 col-lg-5 col-xl-5" style="padding:0px" id="price-image">
+                <img class="d-block w-100" src="{{ k.photo.url }}" style="padding:0px; border-radius:0px" alt="">
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-7 col-xl-7">
+                <h4>{{k.name}}</h4>
+                {% for l in price_info %}
+                    {% if l.price_cats == k %}
+                    <h5><i class="bi bi-tag-fill"></i> {{l.name}}: {{l.price}} р.</h5>
+                    <p>{{l.description}}</p>
+                    {% endif %}
+                {% endfor %}
+            </div>
+        </div>
+    {% endfor %}
+    </div>
+</div>
+
+<!-- request -->
+<div class="container-fluid" id="request">
+    <div class="row" style="padding: 0em">
+        <div class="col-12">
+            <h2 align="center">Заявка на съемку</h2>
+            <form align="center" action="{% url 'contacts' %}" method="post">
+                {% csrf_token %}
+                {% for f in form %}
+                <p><label for="{{ f.id_for_label }}"></label>{{ f }}</p>
+                {% endfor %}
+                <button class="contacts" type="submit">Отправить заявку</button>
+                {% if messages %}
+                <ul class="messages">
+                    {% for message in messages %}
+                    <li {% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+                    {% endfor %}
+                </ul>
+                {% endif %}
+                <p class="pd">Отправляя заявку, вы даете <a href="{% url 'pd' %}">согласие на обработку своих персональных данных.</a></p>
+                <br>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- Instagram slider -->
+<div class="container-fluid">
+    <div class="row" style="padding: 0em">
+        <div class="slider-instagram">
+            <h1 align="center">Все самые свежие работы вы можете увидеть в моем Instagram</h1>
+            <h1 align="center"><a href="https://www.instagram.com" target="_blank"><i class="bi bi-instagram"></i> ochir</a></h1>
+            <div class="inst-slider">
+                <div class="slider responsive">
+                    {% for k in inst_slider_photos %}
+                        <div style="padding: 1em"><img src="{{ k.photo.url }}" alt=""></div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

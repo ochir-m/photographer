@@ -1,0 +1,42 @@
+{% extends 'photographer/base.html' %}
+{% load static %}
+
+{% block title %}{{title}}{% endblock %}
+
+{% block content %}
+<div class="container-fluid" style="background-color:#f0f0f0">
+    <div class="row">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <h3 class="gift-title">{{title}}</h3>
+                    <hr class="gift-hr">
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            {% for p in posts %}
+            <div class="row" id="gift-info">
+                <div class="col-12" id="price-panel">
+                    <h4>{{p.title}}</h4>
+                    <p>Цена: {{p.price}}</p>
+                </div>
+                {% if p.photo %}
+                <div class="col-xs-0 col-sm-0 col-md-5 col-lg-5 col-xl-5" style="padding:0px" id="gift-image">
+                    <img class="d-block w-100" src="{{p.photo.url}}" style="padding:0px; border-radius:0px">
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-7 col-lg-7 col-xl-7" id="gift-text">
+                    <p>{{p.content}}</p>
+                </div>
+                {% else %}
+                <div class="col-12">
+                    <p>{{p.content}}</p>
+                </div>
+                {% endif %}
+            </div>
+            {% endfor %}
+            <br>
+        </div>
+    </div>
+</div>
+{% endblock %}

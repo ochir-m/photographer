@@ -1,0 +1,64 @@
+{% extends 'photographer/base.html' %}
+
+{% block title %}{{title}}{% endblock %}
+
+{% block content %}
+<div class="container-fluid" id="blog-detail">
+    <div class="row">
+        <div class="col-md-12">
+            {% if post.photo1 %}
+            <p><img class="d-block w-100" src="{{post.photo1.url}}"></p>
+            {% endif %}
+
+            <h3>{{title}}</h3>
+            <p style="color:grey">{{post.content1}}</p>
+            {% if post.content2 %}
+            <p>{{post.content2}}</p>
+            {% endif %}
+
+            {% if post.photo2 %}
+            <p><img class="d-block w-100" src="{{post.photo2.url}}"></p>
+            {% endif %}
+
+            {% if post.content3 %}
+            <p>{{post.content3}}</p>
+            {% endif %}
+
+            {% if post.photo3 %}
+            <p><img class="d-block w-100" src="{{post.photo3.url}}"></p>
+            {% endif %}
+
+            {% if post.content4 %}
+            <p>{{post.content4}}</p>
+            {% endif %}
+
+            {% if post.photo4 %}
+            <p><img class="d-block w-100" src="{{post.photo4.url}}"></p>
+            {% endif %}
+
+            {% if post.content5 %}
+            <p>{{post.content5}}</p>
+            {% endif %}
+
+            {% if post.photo5 %}
+            <p><img class="d-block w-100" src="{{post.photo5.url}}"></p>
+            {% endif %}
+
+            {% if post.content6 %}
+            <p>{{post.content6}}</p>
+            {% endif %}
+
+            {% if post.photo6 %}
+            <p><img class="d-block w-100" src="{{post.photo6.url}}"></p>
+            {% endif %}
+
+            {% if post.url %}
+            <p>Сайт: <a href="{{ post.url }}" class="post-url">{{post.url}}</a></p>
+            {% endif %}
+            <br>
+            <p><a href="{% url 'home' %}" class="post-back">ВЕРНУТЬСЯ НА ГЛАВНУЮ</a></p>
+            <br>
+        </div>
+    </div>
+</div>
+{% endblock %}
