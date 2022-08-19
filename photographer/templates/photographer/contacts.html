@@ -77,14 +77,14 @@
 
 <!-- Instagram slider -->
 <div class="container-fluid">
-    <div class="row" style="padding: 0em">
+    <div class="row" style="padding: 1em">
         <div class="slider-instagram">
             <h1 align="center">Все самые свежие работы вы можете увидеть в моем Instagram</h1>
             <h1 align="center"><a href="https://www.instagram.com" target="_blank"><i class="bi bi-instagram"></i> ochir</a></h1>
             <div class="inst-slider">
                 <div class="slider responsive">
                     {% for k in inst_slider_photos %}
-                        <div style="padding: 1em"><img src="{{ k.photo.url }}" alt=""></div>
+                        <div><img src="{{ k.photo.url }}" alt=""></div>
                     {% endfor %}
                 </div>
             </div>
