@@ -1,0 +1,68 @@
+@import "variables";
+
+// promo and gift
+@mixin promoGift {
+    background-color: #f0f0f0;
+    margin: 0 auto;
+    padding: 0px;
+}
+
+@mixin promoGiftTitle {
+    margin: 0.8em 0;
+    text-align: center;
+}
+
+@mixin promoGiftHr {
+    width: 30%;
+    margin: 1.5em auto;
+    color: black;
+}
+
+@mixin promoGiftInfo {
+    width: 75%;
+    background-color: white;
+    margin: 1.8em auto;
+    transition: transform 0.5s;
+    border-radius: 50px;
+    padding: 0px;
+    box-shadow: 2px 2px 1px #d4d4d4;
+    overflow: hidden;
+}
+
+@mixin promoGiftInfoHover {
+    transform: scale(1.02);
+    opacity: 94%;
+    box-shadow: 0px 0px 0px;
+}
+
+//promo and gift price panel
+
+@mixin promoGiftPanel($panelColor: #b5ff33) {
+    width: 100%;
+    padding-left: 2.6em;
+    height: 4em;
+    background-color: $panelColor;
+    border-radius: 50px 50px 0px 0px;
+}
+
+@mixin promoGiftPanelTitle {
+    float: left;
+    padding-top: 1.7%;
+    font-family: 'Jost', sans-serif;
+}
+
+@mixin promoGiftPanelDate {
+    float: right;
+    padding-right: 3%;
+    padding-top: 1.9%;
+    font-size: 1.1em;
+    font-family: 'Jost', sans-serif;
+}
+
+@mixin promoGiftText {
+    font-family: 'Jost', sans-serif;
+    text-align: justify;
+    font-size: 1.3em;
+    padding: 0.5em 1em;
+}
+
