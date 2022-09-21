@@ -20,7 +20,6 @@ body, html {
   font-weight: bold;
   padding-left: 6%;
 }
-
 .logo:hover {
   color: orange;
 }
@@ -38,7 +37,6 @@ body, html {
   color: black !important;
   text-decoration: none;
 }
-
 .nav-link:hover {
   color: orange !important;
 }
@@ -105,7 +103,6 @@ body, html {
 .soc-network a {
   color: black;
 }
-
 .soc-network a:hover {
   color: orange;
 }
@@ -156,7 +153,6 @@ body, html {
   text-decoration: none;
   color: black;
 }
-
 #footer-menu h5 a:hover {
   color: orange;
 }
@@ -166,7 +162,6 @@ body, html {
   text-decoration: none;
   color: #6b6b6b;
 }
-
 #footer-menu a:hover {
   color: black;
 }
@@ -204,16 +199,13 @@ body, html {
   visibility: hidden;
   z-index: 1000;
 }
-
 .button-up:hover {
   cursor: pointer;
   background-color: #333;
 }
-
-.button:active {
+.button-up:active {
   background-color: #555;
 }
-
 .button-up::after {
   content: "\f077";
   font-family: FontAwesome;
@@ -305,17 +297,15 @@ body, html {
 .carousel-caption button {
   margin: 0.1em 0.1em;
 }
+.carousel-caption button:hover {
+  background-color: black;
+}
 
 .carousel-caption a {
   text-decoration: none;
   color: white;
   text-shadow: 1px 1px 10px #000;
 }
-
-.carousel-caption button:hover {
-  background-color: black;
-}
-
 .carousel-caption a:hover {
   color: white;
 }
@@ -429,17 +419,15 @@ body, html {
   border: solid 0.09em grey;
   margin: 0 1.1em;
 }
-
-#about button a {
-  color: grey;
-  text-decoration: none;
-}
-
 #about button:hover {
   background-color: black;
   font-color: white;
 }
 
+#about button a {
+  color: grey;
+  text-decoration: none;
+}
 #about button a:hover {
   color: white;
 }
@@ -512,7 +500,6 @@ body, html {
   font-family: "Jost", sans-serif;
   border-bottom: solid 0.08em #d9d9d9;
 }
-
 #blog-text:hover {
   background-color: white;
 }
@@ -521,7 +508,6 @@ body, html {
   color: grey;
   text-decoration: none;
 }
-
 #blog-text p a:hover {
   color: black;
 }
@@ -563,7 +549,6 @@ body, html {
   text-decoration: none;
   color: black;
 }
-
 .list-pages a:hover {
   color: orange;
 }
@@ -597,7 +582,6 @@ body, html {
   color: black;
   text-decoration: none;
 }
-
 .post-url:hover {
   color: grey;
 }
@@ -609,7 +593,6 @@ body, html {
   color: grey;
   border-radius: 0.8em;
 }
-
 .post-back:hover {
   color: black;
 }
@@ -656,7 +639,6 @@ body, html {
   color: black !important;
   text-decoration: none;
 }
-
 .categories-nav-link:hover {
   color: orange !important;
 }
@@ -918,7 +900,6 @@ textarea, .contacts {
 .pd a {
   color: grey;
 }
-
 .pd a:hover {
   color: black;
 }
@@ -960,7 +941,6 @@ textarea, .contacts {
   text-decoration: none;
   color: black;
 }
-
 .slider-instagram a:hover {
   color: #7d0b77;
 }
