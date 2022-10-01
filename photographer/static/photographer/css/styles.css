@@ -99,7 +99,6 @@ body, html {
   list-style: none;
   margin: 0.8em 0.6em;
 }
-
 .soc-network a {
   color: black;
 }
@@ -148,7 +147,6 @@ body, html {
   margin-bottom: 0.8em;
   color: black;
 }
-
 #footer-menu h5 a {
   text-decoration: none;
   color: black;
@@ -156,7 +154,6 @@ body, html {
 #footer-menu h5 a:hover {
   color: orange;
 }
-
 #footer-menu a {
   font-size: 1.06em;
   text-decoration: none;
@@ -165,17 +162,14 @@ body, html {
 #footer-menu a:hover {
   color: black;
 }
-
 #footer-menu ul {
   margin-left: 0px;
   padding: 0px;
 }
-
 #footer-menu li {
   list-style: none;
   margin-bottom: 0.4em;
 }
-
 #footer-menu p {
   font-size: 1.06em;
   color: #6b6b6b;
@@ -287,20 +281,17 @@ body, html {
   text-shadow: 1px 1px 15px black;
   font-family: "Jost", sans-serif;
 }
-
 .carousel-caption h2 {
   margin: 0.5em 0;
   color: white;
   font-size: 2.2em;
 }
-
 .carousel-caption button {
   margin: 0.1em 0.1em;
 }
 .carousel-caption button:hover {
   background-color: black;
 }
-
 .carousel-caption a {
   text-decoration: none;
   color: white;
@@ -402,17 +393,14 @@ body, html {
   border-bottom: solid 0.08em #d9d9d9;
   background-color: #f0f0f0;
 }
-
 #about h5 {
   font-size: 2em;
   color: grey;
 }
-
 #about p {
   font-size: 1.4em;
   color: grey;
 }
-
 #about button {
   font-size: 1.1em;
   border-radius: 0.6em;
@@ -423,7 +411,6 @@ body, html {
   background-color: black;
   font-color: white;
 }
-
 #about button a {
   color: grey;
   text-decoration: none;
@@ -490,7 +477,6 @@ body, html {
 #blog {
   background-color: #f0f0f0;
 }
-
 #blog img {
   margin-left: 0px;
   padding-left: 0px;
@@ -503,7 +489,6 @@ body, html {
 #blog-text:hover {
   background-color: white;
 }
-
 #blog-text p a {
   color: grey;
   text-decoration: none;
@@ -515,6 +500,13 @@ body, html {
 /* blog list-pages */
 .list-pages {
   text-align: center;
+}
+.list-pages a {
+  text-decoration: none;
+  color: black;
+}
+.list-pages a:hover {
+  color: orange;
 }
 
 .page-num {
@@ -528,6 +520,9 @@ body, html {
   border-radius: 50%;
   border: solid 1px grey;
   line-height: 3.1em;
+}
+.page-num p {
+  color: black;
 }
 
 .page-num-text {
@@ -545,18 +540,6 @@ body, html {
   line-height: 3.1em;
 }
 
-.list-pages a {
-  text-decoration: none;
-  color: black;
-}
-.list-pages a:hover {
-  color: orange;
-}
-
-.page-num p {
-  color: black;
-}
-
 .underline {
   margin: -1em auto;
   color: grey;
@@ -568,12 +551,10 @@ body, html {
   margin: 0 auto;
   text-align: center;
 }
-
 #blog-detail p {
   font-size: 1.1em;
   margin: 1em 0;
 }
-
 #blog-detail subtitle {
   color: grey;
 }
@@ -601,7 +582,6 @@ body, html {
 #experience {
   font-family: "Montserrat", sans-serif;
 }
-
 #experience p {
   font-size: 1.25em;
 }
@@ -662,19 +642,16 @@ body, html {
   text-align: center;
   margin: 1em auto;
 }
-
 #my-contacts p {
   font-family: "Jost", sans-serif;
   font-size: 1.4em;
   text-align: center;
   margin: 0.1em 2.4em;
 }
-
 #my-contacts h3 {
   margin-top: 1.5em;
   margin-bottom: 1em;
 }
-
 #my-contacts ul {
   font-size: 1.2em;
   padding: 0em 6em;
@@ -767,17 +744,14 @@ body, html {
           box-shadow: 2px 2px 1px #d4d4d4;
   overflow: hidden;
 }
-
 #price-info h4 {
   font-size: 1.5em;
   padding: 0.5em 0;
   color: orange;
 }
-
 #price-info h5 {
   font-size: 1.1em;
 }
-
 #price-info p {
   font-family: "Jost", sans-serif;
   text-align: justify;
@@ -844,7 +818,6 @@ body, html {
 #request h2 {
   padding-top: 1em;
 }
-
 #request form {
   font-family: "Jost", sans-serif;
   margin-top: 2em;
@@ -896,7 +869,6 @@ textarea, .contacts {
   margin-top: 1em;
   font-family: "Motserrat" sans-serif;
 }
-
 .pd a {
   color: grey;
 }
@@ -908,7 +880,6 @@ textarea, .contacts {
   width: 70%;
   margin: 0 auto;
 }
-
 .page-pd p {
   font-family: "Jost", sans-serif;
   text-align: justify;
@@ -930,13 +901,11 @@ textarea, .contacts {
 .slider-instagram {
   width: 100%;
 }
-
 .slider-instagram img {
   height: 24em;
   width: 18em;
   margin: 1.4em auto;
 }
-
 .slider-instagram a {
   text-decoration: none;
   color: black;
@@ -944,7 +913,6 @@ textarea, .contacts {
 .slider-instagram a:hover {
   color: #7d0b77;
 }
-
 .slider-instagram a i {
   font-size: 0.8em;
 }
@@ -1024,13 +992,11 @@ img {
   background-color: #b5ff33;
   border-radius: 50px 50px 0px 0px;
 }
-
 #date-panel h4 {
   float: left;
   padding-top: 1.7%;
   font-family: "Jost", sans-serif;
 }
-
 #date-panel p {
   float: right;
   padding-right: 3%;
@@ -1159,13 +1125,11 @@ img {
   background-color: #4fc2db;
   border-radius: 50px 50px 0px 0px;
 }
-
 #price-panel h4 {
   float: left;
   padding-top: 1.7%;
   font-family: "Jost", sans-serif;
 }
-
 #price-panel p {
   float: right;
   padding-right: 3%;

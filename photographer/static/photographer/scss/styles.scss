@@ -111,12 +111,13 @@ body, html {
     display: inline-block;
     list-style: none;
     margin: 0.8em 0.6em;
-}
-.soc-network a {
-    color: black;
 
-    &:hover {
-        color: $navbarAndMenuHover;
+    a {
+        color: black;
+
+        &:hover {
+            color: $navbarAndMenuHover;
+        }
     }
 }
 
@@ -162,44 +163,45 @@ body, html {
    margin: 1.5em 2.4em;
 }
 
-#footer-menu h5 {
-   font-size: 1.25em;
-   margin-bottom: 0.8em;
-   color: black;
-}
+#footer-menu {
+   h5 {
+      font-size: 1.25em;
+      margin-bottom: 0.8em;
+      color: black;
 
-#footer-menu h5 a {
-   text-decoration: none;
-   color: black;
+      a {
+        text-decoration: none;
+        color: black;
 
-   &:hover {
-    color: $navbarAndMenuHover;
+        &:hover {
+            color: $navbarAndMenuHover;
+        }
+      }
    }
-}
 
-#footer-menu a {
-   font-size: 1.06em;
-   text-decoration: none;
-   color: #6b6b6b;
-
-   &:hover {
-    color: black;
+   a {
+       font-size: 1.06em;
+       text-decoration: none;
+       color: #6b6b6b;
+       &:hover {
+          color: black;
+        }
    }
-}
 
-#footer-menu ul {
+   ul {
     margin-left: 0px;
     padding: 0px;
-}
+   }
 
-#footer-menu li {
+   li {
     list-style: none;
     margin-bottom: 0.4em;
-}
+   }
 
-#footer-menu p {
-   font-size: 1.06em;
-   color: #6b6b6b;
+   p {
+    font-size: 1.06em;
+    color: #6b6b6b;
+   }
 }
 
 /* button-up */
@@ -305,29 +307,29 @@ body, html {
     transform: translateY(-50%);
     text-shadow: 1px 1px 15px black;
     font-family: 'Jost', sans-serif;
-}
 
-.carousel-caption h2 {
-    margin: 0.5em 0;
-    color: white;
-    font-size: 2.2em;
-}
-
-.carousel-caption button {
-    margin: 0.1em 0.1em;
-
-    &:hover {
-        background-color: black;
+    h2 {
+        margin: 0.5em 0;
+        color: white;
+        font-size: 2.2em;
     }
-}
 
-.carousel-caption a {
-    text-decoration: none;
-    color: white;
-    text-shadow: 1px 1px 10px #000;
+    button {
+        margin: 0.1em 0.1em;
 
-    &:hover {
+        &:hover {
+            background-color: black;
+        }
+    }
+
+    a {
+       text-decoration: none;
        color: white;
+       text-shadow: 1px 1px 10px #000;
+
+       &:hover {
+        color: white;
+       }
     }
 }
 
@@ -409,38 +411,39 @@ body, html {
     font-family: 'Jost', sans-serif;
     border-bottom: solid 0.08em #d9d9d9;
     background-color: #f0f0f0;
-}
 
-#about h5 {
-    font-size: 2em;
-    color: grey;
-}
+    h5 {
+        font-size: 2em;
+        color: grey;
+    }
 
-#about p {
-    font-size: 1.4em;
-    color: grey;
-}
+    p {
+        font-size: 1.4em;
+        color: grey;
+    }
 
-#about button {
-    font-size: 1.1em;
-    border-radius: 0.6em;
-    border: solid 0.09em grey;
-    margin: 0 1.1em;
+    button {
+        font-size: 1.1em;
+        border-radius: 0.6em;
+        border: solid 0.09em grey;
+        margin: 0 1.1em;
 
-    &:hover {
-        background-color: black;
-        font-color: white;
+        &:hover {
+            background-color: black;
+            font-color: white;
+        }
+
+        a {
+            color: grey;
+            text-decoration: none;
+
+            &:hover {
+                color: white;
+            }
+        }
     }
 }
 
-#about button a {
-    color: grey;
-    text-decoration: none;
-
-    &:hover {
-        color: white;
-    }
-}
 
 /* media about */
 @media only screen and (max-width: 800px) {
@@ -494,11 +497,11 @@ body, html {
 
 #blog {
     background-color: #f0f0f0;
-}
 
-#blog img {
-    margin-left: 0px;
-    padding-left: 0px;
+    img {
+        margin-left: 0px;
+        padding-left: 0px;
+    }
 }
 
 #blog-text {
@@ -508,20 +511,29 @@ body, html {
     &:hover {
         background-color: white;
     }
-}
 
-#blog-text p a {
-    color: grey;
-    text-decoration: none;
+    p a {
+        color: grey;
+        text-decoration: none;
 
-    &:hover {
-       color: black;
+        &:hover {
+           color: black;
+        }
     }
 }
 
 /* blog list-pages */
 .list-pages {
     text-align: center;
+
+    a {
+        text-decoration: none;
+        color: black;
+
+        &:hover {
+            color: $navbarAndMenuHover;
+        }
+    }
 }
 .page-num {
     list-style: none;
@@ -534,6 +546,10 @@ body, html {
     border-radius: 50%;
     border: solid 1px grey;
     line-height: 3.1em;
+
+    p {
+        color: black;
+    }
 }
 .page-num-text {
     list-style: none;
@@ -550,18 +566,6 @@ body, html {
     line-height: 3.1em;
 }
 
-.list-pages a {
-    text-decoration: none;
-    color: black;
-
-    &:hover {
-        color: $navbarAndMenuHover;
-    }
-}
-
-.page-num p {
-    color: black;
-}
 .underline {
     margin: -1em auto;
     color: grey;
@@ -572,15 +576,15 @@ body, html {
     width: 80%;
     margin: 0 auto;
     text-align: center;
-}
 
-#blog-detail p {
-    font-size: 1.1em;
-    margin: 1em 0;
-}
+    p {
+        font-size: 1.1em;
+        margin: 1em 0;
+    }
 
-#blog-detail subtitle {
-    color: grey;
+    subtitle {
+        color: grey;
+    }
 }
 
 .post-url {
@@ -607,9 +611,10 @@ body, html {
 /* experience */
 #experience {
     font-family: 'Montserrat', sans-serif;
-}
-#experience p {
-    font-size: 1.25em;
+
+    p {
+       font-size: 1.25em;
+    }
 }
 
 /* media experience */
@@ -668,28 +673,31 @@ body, html {
 /** contacts and price **/
 
 /* my contacts */
-#my-contacts h2 {
-     text-align: center;
-     margin: 1em auto;
+#my-contacts {
+    h2 {
+        text-align: center;
+        margin: 1em auto;
+    }
+
+    p {
+        font-family: 'Jost', sans-serif;
+        font-size: 1.4em;
+        text-align: center;
+        margin: 0.1em 2.4em;
+    }
+
+    h3 {
+        margin-top: 1.5em;
+        margin-bottom: 1em;
+    }
+
+    ul {
+        font-size: 1.2em;
+        padding: 0em 6em;
+        text-align: center;
+    }
 }
 
-#my-contacts p {
-    font-family: 'Jost', sans-serif;
-    font-size: 1.4em;
-    text-align: center;
-    margin: 0.1em 2.4em;
-}
-
-#my-contacts h3 {
-    margin-top: 1.5em;
-    margin-bottom: 1em;
-}
-
-#my-contacts ul {
-    font-size: 1.2em;
-    padding: 0em 6em;
-    text-align: center;
-}
 
 /* media my contacts */
 @media only screen and (max-width: 1308px) {
@@ -770,23 +778,23 @@ body, html {
     padding: 0px;
     box-shadow: 2px 2px 1px #d4d4d4;
     overflow: hidden;
-}
 
-#price-info h4 {
-    font-size: 1.5em;
-    padding: 0.5em 0;
-    color: $navbarAndMenuHover;
-}
+    h4 {
+        font-size: 1.5em;
+        padding: 0.5em 0;
+        color: $navbarAndMenuHover;
+    }
 
-#price-info h5 {
-    font-size: 1.1em;
-}
+    h5 {
+        font-size: 1.1em;
+    }
 
-#price-info p {
-    font-family: 'Jost', sans-serif;
-    text-align: justify;
-    font-size: 1.1em;
-    padding: 0.5em 0.5em;
+    p {
+       font-family: 'Jost', sans-serif;
+       text-align: justify;
+       font-size: 1.1em;
+       padding: 0.5em 0.5em;
+    }
 }
 
 /* media price */
@@ -841,13 +849,16 @@ body, html {
 
 /** request **/
 
-#request h2 {
-    padding-top: 1em;
-}
+#request {
+    h2 {
+        padding-top: 1em;
+    }
 
-#request form {
-    font-family: 'Jost', sans-serif;
-    margin-top: 2em;
+    form {
+        font-family: 'Jost', sans-serif;
+        margin-top: 2em;
+
+    }
 }
 
 textarea, .contacts {
@@ -895,23 +906,25 @@ textarea, .contacts {
     color: grey;
     margin-top: 1em;
     font-family: 'Motserrat' sans-serif;
-}
-.pd a {
-    color: grey;
 
-    &:hover {
-        color: black;
+    a {
+       color: grey;
+
+       &:hover {
+           color: black;
+       }
     }
 }
 
 .page-pd {
     width: 70%;
     margin: 0 auto;
-}
-.page-pd p {
-    font-family: 'Jost', sans-serif;
-    text-align: justify;
-    color: #333333;
+
+    p {
+       font-family: 'Jost', sans-serif;
+       text-align: justify;
+       color: #333333;
+    }
 }
 
 /* Instagram slider */
@@ -929,25 +942,25 @@ textarea, .contacts {
 
 .slider-instagram {
     width: 100%;
-}
 
-.slider-instagram img {
-    height: 24em;
-    width: 18em;
-    margin: 1.4em auto;
-}
-
-.slider-instagram a {
-    text-decoration: none;
-    color: black;
-
-    &:hover {
-        color: #7d0b77;
+    img {
+        height: 24em;
+        width: 18em;
+        margin: 1.4em auto;
     }
-}
 
-.slider-instagram a i {
-    font-size: 0.8em;
+    a {
+       text-decoration: none;
+       color: black;
+
+       &:hover {
+           color: #7d0b77;
+       }
+
+       i {
+        font-size: 0.8em;
+       }
+    }
 }
 
 .inst-slider {
@@ -955,7 +968,6 @@ textarea, .contacts {
     max-width: 74em;
     margin: 0 auto;
 }
-
 
 img {
     padding: 4px;
@@ -1005,14 +1017,14 @@ img {
 
 #date-panel {
     @include promoGiftPanel;
-}
 
-#date-panel h4 {
-    @include promoGiftPanelTitle;
-}
+    h4 {
+        @include promoGiftPanelTitle;
+    }
 
-#date-panel p {
-    @include promoGiftPanelDate;
+    p {
+        @include promoGiftPanelDate;
+    }
 }
 
 /* promo img and text */
@@ -1109,14 +1121,14 @@ img {
 
 #price-panel {
     @include promoGiftPanel($panelColor: #4fc2db);
-}
 
-#price-panel h4 {
-    @include promoGiftPanelTitle;
-}
+    h4 {
+        @include promoGiftPanelTitle;
+    }
 
-#price-panel p {
-    @include promoGiftPanelDate;
+    p {
+       @include promoGiftPanelDate;
+    }
 }
 
 /* gift img and text */
