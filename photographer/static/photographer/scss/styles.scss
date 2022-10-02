@@ -249,18 +249,23 @@ body, html {
 
 /* media footer */
 @media only screen and (max-width: 620px) {
-    #footer-menu h5 {
-       font-size: 1em;
-       margin-bottom: 0.7em;
-    }
-    #footer-menu h5 a {
-       font-size: 1em;
-    }
-    #footer-menu a {
-        font-size: 0.8em;
-    }
-    #footer-menu p {
-        font-size: 0.8em;
+    #footer-menu {
+        h5 {
+            font-size: 1em;
+            margin-bottom: 0.7em;
+
+            a {
+               font-size: 1em;
+            }
+        }
+
+        a {
+           font-size: 0.8em;
+        }
+
+        p {
+           font-size: 0.8em;
+        }
     }
 }
 
@@ -273,18 +278,23 @@ body, html {
     .footer-menu-block {
         margin: 0.8em 1.2em;
     }
-    #footer-menu h5 {
-       font-size: 0.9em;
-       margin-bottom: 0.6em;
-    }
-    #footer-menu h5 a {
-       font-size: 0.9em;
-    }
-    #footer-menu a {
-        font-size: 0.7em;
-    }
-    #footer-menu p {
-        font-size: 0.7em;
+    #footer-menu {
+        h5 {
+            font-size: 0.9em;
+            margin-bottom: 0.6em;
+
+            a {
+                font-size: 0.9em;
+            }
+        }
+
+        a {
+           font-size: 0.7em;
+        }
+
+        p {
+           font-size: 0.7em;
+        }
     }
 }
 
@@ -337,72 +347,73 @@ body, html {
 @media only screen and (max-width: 1000px) {
     .carousel-caption {
         transform: translateY(-48%);
-    }
-    .carousel-caption h2 {
-        font-size: 1.5em;
-    }
-    .carousel-caption h2 {
-        margin: 0.4em 0;
-    }
-    .carousel-caption button {
-        font-size: 0.8em;
+
+        h2 {
+            font-size: 1.5em;
+            margin: 0.4em 0;
+        }
+
+        button {
+            font-size: 0.8em;
+        }
     }
 }
 
 @media only screen and (max-width: 750px) {
     .carousel-caption {
         transform: translateY(-45%);
-    }
-    .carousel-caption h2 {
-        font-size: 1.4em;
-    }
-    .carousel-caption h2 {
-        margin: 0.3em 0;
-    }
-    .carousel-caption button {
-        font-size: 0.7em;
+
+        h2 {
+            font-size: 1.4em;
+            margin: 0.3em 0;
+        }
+
+        button {
+            font-size: 0.7em;
+        }
     }
 }
 
 @media only screen and (max-width: 650px) {
     .carousel-caption {
         transform: translateY(-40%);
-    }
-    .carousel-caption h2 {
-        font-size: 1.2em;
-    }
-    .carousel-caption h2 {
-        margin: 0.2em 0;
-    }
-    .carousel-caption button {
-        font-size: 0.5em;
+
+        h2 {
+            font-size: 1.2em;
+            margin: 0.2em 0;
+        }
+
+        button {
+            font-size: 0.5em;
+        }
     }
 }
 
 @media only screen and (max-width: 550px) {
     .carousel-caption {
         transform: translateY(-35%);
-    }
-    .carousel-caption h2 {
-        font-size: 1.0em;
-    }
-    .carousel-caption h2 {
-        margin: 0.1em 0;
-    }
-    .carousel-caption button {
-        font-size: 0.4em;
+
+        h2 {
+            font-size: 1.0em;
+            margin: 0.1em 0;
+        }
+
+        button {
+            font-size: 0.4em;
+        }
     }
 }
 
 @media only screen and (max-width: 450px) {
-    .carousel-caption h2 {
-        font-size: 0.8em;
-    }
-    .carousel-caption h2 {
-        margin: 0em 0;
-    }
-    .carousel-caption button {
-        font-size: 0.3em;
+    .carousel-caption {
+        h2 {
+            font-size: 0.8em;
+            margin: 0em 0;
+        }
+
+        button {
+            font-size: 0.3em;
+        }
     }
 }
 
@@ -447,49 +458,64 @@ body, html {
 
 /* media about */
 @media only screen and (max-width: 800px) {
-    #about h5 {
-        font-size: 1.6em;
-    }
-    #about h1 {
-        font-size: 2.2em;
-    }
-    #about p {
-        font-size: 1.1em;
-    }
-    #about button {
-        font-size: 0.9em;
-        margin: 0 0.5em;
+    #about {
+        h5 {
+            font-size: 1.6em;
+        }
+
+        h1 {
+            font-size: 2.2em;
+        }
+
+        p {
+           font-size: 1.1em;
+        }
+
+        button {
+            font-size: 0.9em;
+            margin: 0 0.5em;
+        }
     }
 }
 
 @media only screen and (max-width: 600px) {
-    #about h5 {
-        font-size: 1.5em;
-    }
-    #about h1 {
-        font-size: 2em;
-    }
-    #about p {
-        font-size: 1em;
-    }
-    #about button {
-        font-size: 0.8em;
-        margin: 0 0.4em;
+    #about {
+        h5 {
+            font-size: 1.5em;
+        }
+
+        h1 {
+            font-size: 2em;
+        }
+
+        p {
+           font-size: 1em;
+        }
+
+        button {
+            font-size: 0.8em;
+            margin: 0 0.4em;
+        }
     }
 }
 
 @media only screen and (max-width: 500px) {
-    #about h5 {
-        font-size: 1.3em;
-    }
-    #about h1 {
-        font-size: 1.8em;
-    }
-    #about p {
-        font-size: 0.8em;
-    }
-    #about button {
-        font-size: 0.6em;
+    #about {
+        h5 {
+            font-size: 1.3em;
+        }
+
+        h1 {
+            font-size: 1.8em;
+        }
+
+        p {
+           font-size: 0.8em;
+        }
+
+        button {
+            font-size: 0.6em;
+        }
     }
 }
 
@@ -619,13 +645,16 @@ body, html {
 
 /* media experience */
 @media only screen and (max-width: 800px) {
-    #experience h1 {
-        font-size: 2em;
-        margin: 0.3em 0;
-    }
-    #experience p {
-        font-size: 1em;
-        margin: 0.1em 0;
+    #experience {
+        h1 {
+            font-size: 2em;
+            margin: 0.3em 0;
+        }
+
+        p {
+           font-size: 1em;
+           margin: 0.1em 0;
+        }
     }
 }
 
@@ -701,66 +730,86 @@ body, html {
 
 /* media my contacts */
 @media only screen and (max-width: 1308px) {
-    #my-contacts h2 {
-        margin: 0.8em auto;
-    }
-    #my-contacts p {
-        margin: 0em 1em;
-    }
-    #my-contacts h3 {
-        margin: 1.2em auto;
-    }
-    #my-contacts ul {
-        font-size: 0.8em;
-        padding: 0em 1em;
+    #my-contacts {
+        h2 {
+            margin: 0.8em auto;
+        }
+
+        p {
+           margin: 0em 1em;
+        }
+
+        h3 {
+            margin: 1.2em auto;
+        }
+
+        ul {
+            font-size: 0.8em;
+            padding: 0em 1em;
+        }
     }
 }
 
 @media only screen and (max-width: 1180px) {
-    #my-contacts h2 {
-        font-size: 1.5em;
-    }
-    #my-contacts p {
-        font-size: 1.2em;
-    }
-    #my-contacts h3 {
-        margin-top: 3em;
-        font-size: 1.4em;
-    }
-    #my-contacts ul {
-        font-size: 0.6em;
-        padding: 0em;
+    #my-contacts {
+        h2 {
+            font-size: 1.5em;
+        }
+
+        p {
+           font-size: 1.2em;
+        }
+
+        h3 {
+            margin-top: 3em;
+            font-size: 1.4em;
+        }
+
+        ul {
+            font-size: 0.6em;
+            padding: 0em;
+        }
     }
 }
 
 @media only screen and (max-width: 990px) {
-    #my-contacts h2 {
-        margin-top: 0em;
-    }
-    #my-contacts h3 {
-        font-size: 1.1em;
-        margin-top: 1.5em;
-    }
-    #my-contacts ul {
-        font-size: 0.8em;
+    #my-contacts {
+        h2 {
+            margin-top: 0em;
+        }
+
+        h3 {
+            font-size: 1.1em;
+            margin-top: 1.5em;
+        }
+
+        ul {
+            font-size: 0.8em;
+        }
     }
 }
 
 @media only screen and (max-width: 800px) {
-    #my-contacts h2 {
-        font-size: 1.3em;
-    }
-    #my-contacts p {
-        font-size: 1em;
+    #my-contacts {
+        h2 {
+            font-size: 1.3em;
+        }
+
+        p {
+           font-size: 1em;
+        }
     }
 }
 
 @media only screen and (max-width: 760px) {
-    #my-contacts h2 {
-        font-size: 1.2em;
-    }
-    #my-contacts p {
-        font-size: 0.9em;
+    #my-contacts {
+        h2 {
+            font-size: 1.2em;
+        }
+
+        p {
+           font-size: 0.9em;
+        }
     }
 }
 
@@ -803,47 +852,60 @@ body, html {
     #price h2 {
         font-size: 1.3em;
     }
+
     #price-image {
         width: 0%;
     }
-    #price-info h4 {
-        font-size: 1.2em;
-        padding: 0.5em 1em;
-    }
-    #price-info h5 {
-        font-size: 1em;
-        padding: 0 1em;
-    }
-    #price-info p {
-        font-size: 1em;
-        padding: 0.5em 1em;
+
+    #price-info {
+        h4 {
+            font-size: 1.2em;
+            padding: 0.5em 1em;
+        }
+
+        h5 {
+            font-size: 1em;
+            padding: 0 1em;
+        }
+
+        p {
+           font-size: 1em;
+            padding: 0.5em 1em;
+        }
     }
 }
 
 @media only screen and (max-width: 600px) {
-    #price-info h4 {
-        font-size: 1.1em;
-    }
-    #price-info h5 {
-        font-size: 0.9em;
-    }
-    #price-info p {
-        font-size: 0.9em;
+    #price-info {
+        h4 {
+            font-size: 1.1em;
+        }
+
+        h5 {
+            font-size: 0.9em;
+        }
+
+        p {
+           font-size: 0.9em;
+        }
     }
 }
 
 @media only screen and (max-width: 450px) {
     #price-info {
         border-radius: 0px;
-    }
-    #price-info h4 {
-        font-size: 1em;
-    }
-    #price-info h5 {
-        font-size: 0.8em;
-    }
-    #price-info p {
-        font-size: 0.8em;
+
+        h4 {
+            font-size: 1em;
+        }
+
+        h5 {
+            font-size: 0.8em;
+        }
+
+        p {
+           font-size: 0.8em;
+        }
     }
 }
 
@@ -857,7 +919,6 @@ body, html {
     form {
         font-family: 'Jost', sans-serif;
         margin-top: 2em;
-
     }
 }
 
@@ -876,24 +937,32 @@ textarea, .contacts {
 /* media request */
 
 @media only screen and (max-width: 800px) {
-    #request h2 {
-        font-size: 1.5em;
+    #request {
+        h2 {
+            font-size: 1.5em;
+        }
+
+        p {
+           font-size: 0.8em;
+        }
     }
-    #request p {
-        font-size: 0.8em;
-    }
+
     textarea, .contacts {
         width: 64%;
     }
 }
 
 @media only screen and (max-width: 600px) {
-    #request h2 {
-        font-size: 1.3em;
+    #request {
+        h2 {
+            font-size: 1.3em;
+        }
+
+        p {
+           font-size: 0.7em;
+        }
     }
-    #request p {
-        font-size: 0.7em;
-    }
+
     textarea, .contacts {
         width: 80%;
     }
@@ -1036,31 +1105,39 @@ img {
 /* media promo */
 
 @media only screen and (max-width: 1000px) {
-    #date-panel h4 {
-        padding-top: 3%;
-        padding-left: 0.5%;
-        font-size: 1.2em;
+    #date-panel {
+        h4 {
+            padding-top: 3%;
+            padding-left: 0.5%;
+            font-size: 1.2em;
+        }
+
+        p {
+           padding-top: 3%;
+           padding-right: 3%;
+           font-size: 1em;
+        }
     }
-    #date-panel p {
-        padding-top: 3%;
-        padding-right: 3%;
-        font-size: 1em;
-    }
+
     #promo-text p {
         font-size: 1em;
     }
 }
 
 @media only screen and (max-width: 900px) {
-    #date-panel h4 {
-        padding-top: 4%;
-        font-size: 1em;
+    #date-panel {
+        h4 {
+            padding-top: 4%;
+            font-size: 1em;
+        }
+
+        p {
+           padding-top: 4%;
+           padding-right: 5%;
+           font-size: 0.8em;
+        }
     }
-    #date-panel p {
-        padding-top: 4%;
-        padding-right: 5%;
-        font-size: 0.8em;
-    }
+
     #promo-text p {
         font-size: 0.8em;
     }
@@ -1070,30 +1147,39 @@ img {
     .promo-title {
         font-size: 1.3em;
     }
-    #date-panel h4 {
-        padding-top: 1%;
-        font-size: 1em;
+    #date-panel {
+        h4 {
+            padding-top: 1%;
+            font-size: 1em;
+        }
+
+        p {
+           padding-top: 1%;
+           padding-right: 5%;
+           font-size: 0.8em;
+
+        }
     }
-    #date-panel p {
-        padding-top: 1%;
-        padding-right: 5%;
-        font-size: 0.8em;
-    }
+
     #promo-text p {
         font-size: 0.8em;
     }
 }
 
 @media only screen and (max-width: 550px) {
-    #date-panel h4 {
-        padding-top: 0%;
-        font-size: 1em;
+    #date-panel {
+        h4 {
+            padding-top: 0%;
+            font-size: 1em;
+        }
+
+        p {
+           padding-top: 0%;
+           padding-right: 5%;
+           font-size: 0.8em;
+        }
     }
-    #date-panel p {
-        padding-top: 0%;
-        padding-right: 5%;
-        font-size: 0.8em;
-    }
+
     #promo-text p {
         font-size: 0.8em;
     }
@@ -1144,31 +1230,39 @@ img {
         font-size: 1.3em;
     }
 
-    #price-panel h4 {
-        padding-top: 4%;
-        padding-left: 0.5%;
-        font-size: 1em;
+    #price-panel {
+        h4 {
+            padding-top: 4%;
+            padding-left: 0.5%;
+            font-size: 1em;
+        }
+
+        p {
+           padding-top: 4%;
+           padding-right: 3%;
+           font-size: 0.8em;
+        }
     }
-    #price-panel p {
-        padding-top: 4%;
-        padding-right: 3%;
-        font-size: 0.8em;
-    }
+
     #gift-text p {
         font-size: 1em;
     }
 }
 
 @media only screen and (max-width: 600px) {
-    #price-panel h4 {
-        padding-top: 5%;
-        font-size: 0.8em;
+    #price-panel {
+        h4 {
+            padding-top: 5%;
+            font-size: 0.8em;
+        }
+
+        p {
+           padding-top: 5%;
+           padding-right: 6%;
+           font-size: 0.6em;
+        }
     }
-    #price-panel p {
-        padding-top: 5%;
-        padding-right: 6%;
-        font-size: 0.6em;
-    }
+
     #gift-text p {
         font-size: 0.8em;
     }

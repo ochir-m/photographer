@@ -221,15 +221,12 @@ body, html {
     font-size: 1em;
     margin-bottom: 0.7em;
   }
-
   #footer-menu h5 a {
     font-size: 1em;
   }
-
   #footer-menu a {
     font-size: 0.8em;
   }
-
   #footer-menu p {
     font-size: 0.8em;
   }
@@ -248,15 +245,12 @@ body, html {
     font-size: 0.9em;
     margin-bottom: 0.6em;
   }
-
   #footer-menu h5 a {
     font-size: 0.9em;
   }
-
   #footer-menu a {
     font-size: 0.7em;
   }
-
   #footer-menu p {
     font-size: 0.7em;
   }
@@ -307,15 +301,10 @@ body, html {
     -webkit-transform: translateY(-48%);
             transform: translateY(-48%);
   }
-
   .carousel-caption h2 {
     font-size: 1.5em;
-  }
-
-  .carousel-caption h2 {
     margin: 0.4em 0;
   }
-
   .carousel-caption button {
     font-size: 0.8em;
   }
@@ -325,15 +314,10 @@ body, html {
     -webkit-transform: translateY(-45%);
             transform: translateY(-45%);
   }
-
   .carousel-caption h2 {
     font-size: 1.4em;
-  }
-
-  .carousel-caption h2 {
     margin: 0.3em 0;
   }
-
   .carousel-caption button {
     font-size: 0.7em;
   }
@@ -343,15 +327,10 @@ body, html {
     -webkit-transform: translateY(-40%);
             transform: translateY(-40%);
   }
-
   .carousel-caption h2 {
     font-size: 1.2em;
-  }
-
-  .carousel-caption h2 {
     margin: 0.2em 0;
   }
-
   .carousel-caption button {
     font-size: 0.5em;
   }
@@ -361,15 +340,10 @@ body, html {
     -webkit-transform: translateY(-35%);
             transform: translateY(-35%);
   }
-
   .carousel-caption h2 {
     font-size: 1em;
-  }
-
-  .carousel-caption h2 {
     margin: 0.1em 0;
   }
-
   .carousel-caption button {
     font-size: 0.4em;
   }
@@ -377,12 +351,8 @@ body, html {
 @media only screen and (max-width: 450px) {
   .carousel-caption h2 {
     font-size: 0.8em;
-  }
-
-  .carousel-caption h2 {
     margin: 0em 0;
   }
-
   .carousel-caption button {
     font-size: 0.3em;
   }
@@ -424,15 +394,12 @@ body, html {
   #about h5 {
     font-size: 1.6em;
   }
-
   #about h1 {
     font-size: 2.2em;
   }
-
   #about p {
     font-size: 1.1em;
   }
-
   #about button {
     font-size: 0.9em;
     margin: 0 0.5em;
@@ -442,15 +409,12 @@ body, html {
   #about h5 {
     font-size: 1.5em;
   }
-
   #about h1 {
     font-size: 2em;
   }
-
   #about p {
     font-size: 1em;
   }
-
   #about button {
     font-size: 0.8em;
     margin: 0 0.4em;
@@ -460,15 +424,12 @@ body, html {
   #about h5 {
     font-size: 1.3em;
   }
-
   #about h1 {
     font-size: 1.8em;
   }
-
   #about p {
     font-size: 0.8em;
   }
-
   #about button {
     font-size: 0.6em;
   }
@@ -592,7 +553,6 @@ body, html {
     font-size: 2em;
     margin: 0.3em 0;
   }
-
   #experience p {
     font-size: 1em;
     margin: 0.1em 0;
@@ -663,15 +623,12 @@ body, html {
   #my-contacts h2 {
     margin: 0.8em auto;
   }
-
   #my-contacts p {
     margin: 0em 1em;
   }
-
   #my-contacts h3 {
     margin: 1.2em auto;
   }
-
   #my-contacts ul {
     font-size: 0.8em;
     padding: 0em 1em;
@@ -681,16 +638,13 @@ body, html {
   #my-contacts h2 {
     font-size: 1.5em;
   }
-
   #my-contacts p {
     font-size: 1.2em;
   }
-
   #my-contacts h3 {
     margin-top: 3em;
     font-size: 1.4em;
   }
-
   #my-contacts ul {
     font-size: 0.6em;
     padding: 0em;
@@ -700,12 +654,10 @@ body, html {
   #my-contacts h2 {
     margin-top: 0em;
   }
-
   #my-contacts h3 {
     font-size: 1.1em;
     margin-top: 1.5em;
   }
-
   #my-contacts ul {
     font-size: 0.8em;
   }
@@ -714,7 +666,6 @@ body, html {
   #my-contacts h2 {
     font-size: 1.3em;
   }
-
   #my-contacts p {
     font-size: 1em;
   }
@@ -723,7 +674,6 @@ body, html {
   #my-contacts h2 {
     font-size: 1.2em;
   }
-
   #my-contacts p {
     font-size: 0.9em;
   }
@@ -773,12 +723,10 @@ body, html {
     font-size: 1.2em;
     padding: 0.5em 1em;
   }
-
   #price-info h5 {
     font-size: 1em;
     padding: 0 1em;
   }
-
   #price-info p {
     font-size: 1em;
     padding: 0.5em 1em;
@@ -788,11 +736,9 @@ body, html {
   #price-info h4 {
     font-size: 1.1em;
   }
-
   #price-info h5 {
     font-size: 0.9em;
   }
-
   #price-info p {
     font-size: 0.9em;
   }
@@ -801,15 +747,12 @@ body, html {
   #price-info {
     border-radius: 0px;
   }
-
   #price-info h4 {
     font-size: 1em;
   }
-
   #price-info h5 {
     font-size: 0.8em;
   }
-
   #price-info p {
     font-size: 0.8em;
   }
@@ -840,7 +783,6 @@ textarea, .contacts {
   #request h2 {
     font-size: 1.5em;
   }
-
   #request p {
     font-size: 0.8em;
   }
@@ -853,7 +795,6 @@ textarea, .contacts {
   #request h2 {
     font-size: 1.3em;
   }
-
   #request p {
     font-size: 0.7em;
   }
@@ -1020,7 +961,6 @@ img {
     padding-left: 0.5%;
     font-size: 1.2em;
   }
-
   #date-panel p {
     padding-top: 3%;
     padding-right: 3%;
@@ -1036,7 +976,6 @@ img {
     padding-top: 4%;
     font-size: 1em;
   }
-
   #date-panel p {
     padding-top: 4%;
     padding-right: 5%;
@@ -1056,7 +995,6 @@ img {
     padding-top: 1%;
     font-size: 1em;
   }
-
   #date-panel p {
     padding-top: 1%;
     padding-right: 5%;
@@ -1072,7 +1010,6 @@ img {
     padding-top: 0%;
     font-size: 1em;
   }
-
   #date-panel p {
     padding-top: 0%;
     padding-right: 5%;
@@ -1157,7 +1094,6 @@ img {
     padding-left: 0.5%;
     font-size: 1em;
   }
-
   #price-panel p {
     padding-top: 4%;
     padding-right: 3%;
@@ -1173,7 +1109,6 @@ img {
     padding-top: 5%;
     font-size: 0.8em;
   }
-
   #price-panel p {
     padding-top: 5%;
     padding-right: 6%;
