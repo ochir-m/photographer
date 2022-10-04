@@ -26,7 +26,7 @@ body, html {
 
 /* main navbar */
 .nav-item {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Motserrat" sans-serif;
   font-size: 1.1em;
   padding-right: 1.03em;
   display: inline-block;
@@ -88,7 +88,6 @@ body, html {
 #footer {
   height: 25vh;
   background: white;
-  border-top: grey;
   border-top: solid 1px #c4c4c4;
 }
 
@@ -541,7 +540,7 @@ body, html {
 
 /* experience */
 #experience {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Motserrat" sans-serif;
 }
 #experience p {
   font-size: 1.25em;
@@ -568,7 +567,7 @@ body, html {
 }
 
 .categories-nav-item {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Motserrat" sans-serif;
   font-size: 1.1em;
   padding: 0 1.3em;
   display: inline-block;

@@ -12,14 +12,14 @@ body, html {
     max-height: 20vh;
     min-height: 10vh;
     width: 100%;
-    background-color: white;
+    background-color: $mainBackgroundColor;
     border-bottom: solid 1px #c4c4c4;
 }
 
 /* logo */
 .logo {
     text-decoration: none;
-    color: black;
+    color: $mainFontColor;
     font-size: 1.3em;
     font-weight: bold;
     padding-left: 6%;
@@ -31,7 +31,7 @@ body, html {
 
 /* main navbar */
 .nav-item {
-    font-family: 'Montserrat', sans-serif;
+    font-family: $secondFont;
     font-size: 1.1em;
     padding-right: 1.03em;
     display: inline-block;
@@ -39,7 +39,7 @@ body, html {
 
 .nav-link {
     font-size: 1.1em;
-    color: black !important;
+    color: $mainFontColor !important;
     text-decoration: none;
 
     &:hover {
@@ -100,8 +100,7 @@ body, html {
 /** footer **/
 #footer {
     height: 25vh;
-    background: white;
-    border-top: grey;
+    background: $mainBackgroundColor;
     border-top: solid 1px #c4c4c4;
 }
 
@@ -113,7 +112,7 @@ body, html {
     margin: 0.8em 0.6em;
 
     a {
-        color: black;
+        color: $mainFontColor;
 
         &:hover {
             color: $navbarAndMenuHover;
@@ -167,11 +166,11 @@ body, html {
    h5 {
       font-size: 1.25em;
       margin-bottom: 0.8em;
-      color: black;
+      color: $mainFontColor;
 
       a {
         text-decoration: none;
-        color: black;
+        color: $mainFontColor;
 
         &:hover {
             color: $navbarAndMenuHover;
@@ -316,7 +315,7 @@ body, html {
     top: 50%;
     transform: translateY(-50%);
     text-shadow: 1px 1px 15px black;
-    font-family: 'Jost', sans-serif;
+    font-family: $mainFont;
 
     h2 {
         margin: 0.5em 0;
@@ -419,18 +418,18 @@ body, html {
 
 /* about */
 #about {
-    font-family: 'Jost', sans-serif;
+    font-family: $mainFont;
     border-bottom: solid 0.08em #d9d9d9;
-    background-color: #f0f0f0;
+    background-color: $secondBackgroundColor;
 
     h5 {
         font-size: 2em;
-        color: grey;
+        color: $secondFontColor;
     }
 
     p {
         font-size: 1.4em;
-        color: grey;
+        color: $secondFontColor;
     }
 
     button {
@@ -445,7 +444,7 @@ body, html {
         }
 
         a {
-            color: grey;
+            color: $secondFontColor;
             text-decoration: none;
 
             &:hover {
@@ -522,7 +521,7 @@ body, html {
 /** blog **/
 
 #blog {
-    background-color: #f0f0f0;
+    background-color: $secondBackgroundColor;
 
     img {
         margin-left: 0px;
@@ -531,7 +530,7 @@ body, html {
 }
 
 #blog-text {
-    font-family: 'Jost', sans-serif;
+    font-family: $mainFont;
     border-bottom: solid 0.08em #d9d9d9;
 
     &:hover {
@@ -539,7 +538,7 @@ body, html {
     }
 
     p a {
-        color: grey;
+        color: $secondFontColor;
         text-decoration: none;
 
         &:hover {
@@ -554,7 +553,7 @@ body, html {
 
     a {
         text-decoration: none;
-        color: black;
+        color: $mainFontColor;
 
         &:hover {
             color: $navbarAndMenuHover;
@@ -574,7 +573,7 @@ body, html {
     line-height: 3.1em;
 
     p {
-        color: black;
+        color: $mainFontColor;
     }
 }
 .page-num-text {
@@ -609,12 +608,12 @@ body, html {
     }
 
     subtitle {
-        color: grey;
+        color: $secondFontColor;
     }
 }
 
 .post-url {
-    color: black;
+    color: $mainFontColor;
     text-decoration: none;
 
     &:hover {
@@ -626,7 +625,7 @@ body, html {
     border: solid 1px grey;
     padding: 0.6em;
     text-decoration: none;
-    color: grey;
+    color: $secondFontColor;
     border-radius: 0.8em;
 
     &:hover {
@@ -636,7 +635,7 @@ body, html {
 
 /* experience */
 #experience {
-    font-family: 'Montserrat', sans-serif;
+    font-family: $secondFont;
 
     p {
        font-size: 1.25em;
@@ -670,7 +669,7 @@ body, html {
 }
 
 .categories-nav-item {
-    font-family: 'Montserrat', sans-serif;
+    font-family: $secondFont;
     font-size: 1.1em;
     padding: 0 1.3em;
     display: inline-block;
@@ -678,7 +677,7 @@ body, html {
 
 .categories-nav-link {
     font-size: 1em;
-    color: black !important;
+    color: $mainFontColor !important;
     text-decoration: none;
 
     &:hover {
@@ -709,7 +708,7 @@ body, html {
     }
 
     p {
-        font-family: 'Jost', sans-serif;
+        font-family: $mainFont;
         font-size: 1.4em;
         text-align: center;
         margin: 0.1em 2.4em;
@@ -821,7 +820,7 @@ body, html {
 #price-info {
     margin: 2em auto;
     width: 80%;
-    background-color: white;
+    background-color: $mainBackgroundColor;
     padding: 1em 1em;
     border-radius: 50px;
     padding: 0px;
@@ -839,7 +838,7 @@ body, html {
     }
 
     p {
-       font-family: 'Jost', sans-serif;
+       font-family: $mainFont;
        text-align: justify;
        font-size: 1.1em;
        padding: 0.5em 0.5em;
@@ -917,7 +916,7 @@ body, html {
     }
 
     form {
-        font-family: 'Jost', sans-serif;
+        font-family: $mainFont;
         margin-top: 2em;
     }
 }
@@ -972,12 +971,12 @@ textarea, .contacts {
 
 .pd {
     font-size: 1em;
-    color: grey;
+    color: $secondFontColor;
     margin-top: 1em;
-    font-family: 'Motserrat' sans-serif;
+    font-family: $secondFont;
 
     a {
-       color: grey;
+       color: $secondFontColor;
 
        &:hover {
            color: black;
@@ -990,7 +989,7 @@ textarea, .contacts {
     margin: 0 auto;
 
     p {
-       font-family: 'Jost', sans-serif;
+       font-family: $mainFont;
        text-align: justify;
        color: #333333;
     }
@@ -1020,7 +1019,7 @@ textarea, .contacts {
 
     a {
        text-decoration: none;
-       color: black;
+       color: $mainFontColor;
 
        &:hover {
            color: #7d0b77;
